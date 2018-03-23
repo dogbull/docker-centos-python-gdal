@@ -3,7 +3,7 @@ MAINTAINER ParkJooHyeon <www.jrr.kr@gmail.com>
 
 
 ENV \
-    GDAL_VERSION=2.2.3 \
+    GDAL_VERSION=2.2.4 \
     LD_LIBRARY_PATH="/usr/local/lib/:${LD_LIBRARY_PATH}" \
     CPLUS_INCLUDE_PATH="/usr/local/include/python3.6m/:${CPLUS_INCLUDE_PATH}"
 
