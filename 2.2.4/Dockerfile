@@ -12,6 +12,8 @@ RUN \
     yum install -y epel-release && \
     yum update -y && \
     yum install -y \
+        https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7-x86_64/pgdg-redhat10-10-2.noarch.rpm && \
+    yum install -y \
         geos-devel \
         proj-devel \
         hdf5-devel \
@@ -20,7 +22,7 @@ RUN \
         libjpeg-turbo-devel \
         libpng-devel \
         giflib-devel \
-        postgresql-devel && \
+        postgresql10-devel && \
     yum clean all
 
 
