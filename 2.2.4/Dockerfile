@@ -26,6 +26,12 @@ RUN \
     yum clean all
 
 
+ENV \
+    PATH="${PATH}:/usr/pgsql-10/bin/" \
+    C_INCLUDE_PATH="${C_INCLUDE_PATH}:/usr/pgsql-10/include/" \
+    CPP_INCLUDE_PATH="${CPP_INCLUDE_PATH}:/usr/pgsql-10/include/"
+
+
 RUN \
     mkdir /tmp/workspace/ && \
     cd /tmp/workspace/ && \
