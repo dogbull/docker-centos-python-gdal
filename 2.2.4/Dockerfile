@@ -14,6 +14,7 @@ RUN \
     yum install -y \
         https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7-x86_64/pgdg-redhat10-10-2.noarch.rpm && \
     yum install -y \
+        proj-epsg \
         geos-devel \
         proj-devel \
         hdf5-devel \
