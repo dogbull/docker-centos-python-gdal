@@ -12,7 +12,7 @@ RUN \
     yum install -y epel-release && \
     yum update -y && \
     yum install -y \
-        https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7-x86_64/pgdg-redhat10-10-2.noarch.rpm && \
+        https://download.postgresql.org/pub/repos/yum/9.6/redhat/rhel-7-x86_64/pgdg-centos96-9.6-3.noarch.rpm && \
     yum install -y \
         proj-epsg \
         geos-devel \
@@ -23,14 +23,14 @@ RUN \
         libjpeg-turbo-devel \
         libpng-devel \
         giflib-devel \
-        postgresql10-devel && \
+        postgresql96-devel && \
     yum clean all
 
 
 ENV \
-    PATH="${PATH}:/usr/pgsql-10/bin/" \
-    C_INCLUDE_PATH="${C_INCLUDE_PATH}:/usr/pgsql-10/include/" \
-    CPP_INCLUDE_PATH="${CPP_INCLUDE_PATH}:/usr/pgsql-10/include/"
+    PATH="${PATH}:/usr/pgsql-9.6/bin/" \
+    C_INCLUDE_PATH="${C_INCLUDE_PATH}:/usr/pgsql-9.6/include/" \
+    CPP_INCLUDE_PATH="${CPP_INCLUDE_PATH}:/usr/pgsql-9.6/include/"
 
 
 RUN \
